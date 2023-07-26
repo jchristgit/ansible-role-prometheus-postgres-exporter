@@ -1,0 +1,7 @@
+---
+- name: restart prometheus-postgres-exporter
+  service:
+    name: prometheus-postgres-exporter
+    state: present
+  tags:
+    - role::prometheus-postgres-exporter
